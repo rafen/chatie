@@ -36,14 +36,14 @@ def transcribe_audio(audio_path):
 def get_answer(transcript):
     prompt = '''Podrias darme unicamente los siguientes campos en formato JSON valido: nombre (first_name), apellido (last_name), edad (age). Tienes que ignorar cualquier otro dato. Si no encuetras el campo debes devolverlo con valores null
 
-Ejemplo: Crear paciente Marcos Perez de 25 años de edas.
-Resultado: {"first_name": "Marcos", "last_name": "Perez", "age": 25}
+Example: Crear paciente Marcos Perez de 25 años de edas.
+Result: {"first_name": "Marcos", "last_name": "Perez", "age": 25}
 
-Ejemplo: paciente Lopez Benito
-Resultado: {"first_name": "Benito", "last_name": "Lopez", "age": null}
+Example: paciente Lopez Benito
+Result: {"first_name": "Benito", "last_name": "Lopez", "age": null}
 
-Ejemplo: Veronica 40 años
-Resultado: {"first_name": Veronica, "last_name": null, "age": 40} \n\n''' + transcript
+Example: Veronica 40 años
+Result: {"first_name": Veronica, "last_name": null, "age": 40} \n\n''' + transcript
 
     response = openai.Completion.create(
         model="text-davinci-003",
