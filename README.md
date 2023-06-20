@@ -10,5 +10,10 @@ The project is just one view that allow user to record an audio message (by hold
 
 ## Example:
 
-The example and text is in Spanish to make the testing more realistic to me, since that's my first language.
+In the example and text English and Spanish are used to test the API with these cases
+
+<img width="542" alt="example" src="https://github.com/rafen/chatie/assets/381332/6311d503-dc39-4730-9097-0e7a5334a445">
+
+Video example:
+https://github.com/rafen/chatie/assets/381332/ed59d5b8-89eb-4954-92ea-8ac6b10e3486
 
